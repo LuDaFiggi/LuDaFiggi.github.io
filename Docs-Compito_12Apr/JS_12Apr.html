@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calcolo Peso</title>
+        <script type="text/javascript">
+            function calcola(form)
+            {
+                var risultato=0;
+                var volume = form.volume.value;
+                var oggetto = form.metallo.selectedIndex;
+                if ((isNaN(volume))||(oggetto<0)||(volume=="")) {
+                    alert("Controllare di aver inserito il volume ed il tipo di materiale");
+                }else
+                {
+                    if(oggetto==0)
+                    {
+                        risultato=7.85*volume;
+                    }
+                    if(oggetto==1)
+                    {
+                        risultato=8.4*volume;
+                    }
+                    if(oggetto==2)
+                    {
+                        risultato=2.6*volume;
+                    }
+                    if(oggetto==3)
+                    {
+                        risultato=8.89*volume;
+                    }
+                    document.getElementById("risultato").innerHTML=risultato;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center><a href="https://ludafiggi.github.io/Docs/index.html"><img src="Index.png"></center></a>
+        <br>
+            <form>
+                <center><h2>Calcolo del peso di un oggetto in metallo</h2></center><br>
+                <label for="oggetti">Inserire un volume: </label>
+                <input type="text" id="volume" name="v"><label for="dm"> dm3</label><br><br>
+                <label for="oggetti">Segli un materiale: </label>
+                <select name="oggetto" id="metallo">
+                    <option value="Acciaio">Acciaio</option>
+                    <option value="Ottone">Ottone</option>
+                    <option value="Alluminio">Alluminio</option>
+                    <option value="Rame">Rame</option>
+                </select>
+                <p><input type="button" id="invia" value="Calcola" onclick="calcola(this.form)"> </p>
+                <p><input type="reset" id="annulla" value="Annulla"></p>
+                <p id="risultato"></p>
+            </form>
+    </body>
+</html>
