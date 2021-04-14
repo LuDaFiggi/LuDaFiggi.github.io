@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Biglietto treno</title>
+        <script type="text/javascript" src="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_15Apr\JavaScript\biglietti.js">
+        </script>
+    </head>
+    <body>
+        <center><a href="https://ludafiggi.github.io/"><img src="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_15Apr\Images\Index.png"></center></a>
+        <form>
+            <p>Inserire il numero di km da percorrere: <input id="numeroKM" type="number"></p>
+            <fieldset>
+                <legend>
+                    In che classe si vuole viaggiare?
+                </legend>
+                <p><input type="radio" name="rad" id="r1">1 (0,43€/km)</p>
+                <p><input type="radio" name="rad" id="r2">2 (0,21€/km)</p>
+            </fieldset>
+            <p>N. persone: 
+                <select id="numeroPersone">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" value="Calcola il prezzo di ogni biglietto" onclick="calcolaPrezzoBiglietto(this.form)">
+                <input type="button" id="invia" value="Calcola il prezzo totale dei biglietti" onclick="calcolaPrezzoBiglietti(this.form)">
+            </p>
+            <p id="costo"></p>
+        </form>
+    </body>
+
+</html>
