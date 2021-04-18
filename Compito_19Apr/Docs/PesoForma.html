@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peso forma</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_19Apr\JavaScript\CalcoloPeso.js"></script>
+    </head>
+    <body>
+        <center><a href="https://ludafiggi.github.io/"><img src="https://ludafiggi.github.io/Images/Index.png"></center></a>
+        <form>
+            <fieldset>
+                <legend>
+                    Calcola il tuo peso forma!
+                </legend>
+                <p>
+                    Inserisci la tua altezza (cm): <input id="altezza" type="number" placeholder="Altezza...">
+                    <br>
+                    Inserisci il tuo sesso: 
+                    <select id="sesso">
+                        <option>Femmina</option>
+                        <option>Maschio</option>
+                    </select>
+                    <br>
+                    Inserisci la tua età: <input id="eta" type="number" placeholder="Età...">
+                    <br>
+                    Inserisci il tuo peso: <input id="peso" type="number" placeholder="Peso...">
+                </p>
+            </fieldset>
+            <p><input type="button" value="Calcola il tuo peso forma" onclick="calcolaPesoForma()"></p>
+            <br>
+            <fieldset>
+                <legend>Ecco il tuo peso forma calcolato con varie formule ed il tuo BMI(Body Mass Index)</legend>
+                <p id="pesoLorenz"></p>
+                <p id="pesoBroca"></p>
+                <p id="pesowandervael"></p>
+                <p id="bmi"></p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p id="info"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
