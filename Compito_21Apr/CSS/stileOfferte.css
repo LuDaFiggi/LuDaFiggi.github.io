@@ -1,0 +1,15 @@
+#body{
+    position: relative;
+}
+#bottone{
+    float: right;
+}
+#proposta{
+    border: 4px solid blue;
+    background-color:rgb(38, 185, 221);
+    padding: 20px;
+}
+#cosaContiene{
+    border: 4px solid blue;
+    padding: 20px;
+}
