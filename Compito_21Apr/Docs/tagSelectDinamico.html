@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Offerta telefonica</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_21Apr\CSS\stile.css">
+    <script type="text/javascript" src="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_21Apr\JavaScript\js.js"></script>
+</head>
+
+<body onload="inizializza()">
+    <h1>Offerte telefoniche TIM</h1>
+    <div>
+        <center>
+            <h2>TIM Wonder SIX</h2>
+        </center>
+        <br>
+        <h3>Con TIM Wonder SIX per te 70 Giga, Minuti e SMS Illimitati<br>Un'offerta esclusiva ad un prezzo speciale
+        </h3>
+        <h4>In più gratis il primo mese e l'attivazione dell'offerta</h4>
+        <h3><a href="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_21Apr\Docs\TIM_Wonder_Six.html">Vedi offerta
+        </h3></a>
+        <br>
+        <div id="blocco_dati">
+            <h3>Inserisci i tuoi dati personali per attivare l'offerta</h3>
+            <br>
+            <center><table>
+                <tr>
+                    <td>Nome</td>
+                    <td><input type="text" name="nome"></td>
+                </tr>
+                <tr>
+                    <td>Cognome</td>
+                    <td><input type="text" name="cognome"></td>
+                </tr>
+                <tr>
+                    <td>Data di nascita</td>
+                    <td><input type="date" name="data"></td>
+                </tr>
+                <tr>
+                    <td>Sesso</td>
+                    <td>
+                        <select id="sesso"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Provincia di residenza</td>
+                    <td>
+                        <select id="residenza"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Colore degli occhi</td>
+                    <td>
+                        <select id="occhi"></select>
+                    </td>
+                </tr>
+            </table></center>
+            <br><input type="button" id="attiva" value="Attiva l'offerta" onclick="attivazione()">
+        </div>
+    </div>
+</body>
+
+</html>
