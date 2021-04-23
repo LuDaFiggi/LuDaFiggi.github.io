@@ -29,6 +29,11 @@ p{
     color: black;
 }
 
+li{
+    color: black;
+    text-align: left;
+}
+
 
 summary {
     cursor: pointer;
