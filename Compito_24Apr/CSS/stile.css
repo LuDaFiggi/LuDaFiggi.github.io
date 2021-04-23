@@ -1,0 +1,37 @@
+
+div{
+    width: 97%;
+    text-align: center;
+    padding: 20px;
+    background-color: lightskyblue;
+    color: red;
+    border: 3px solid black;
+}
+
+body{
+    background-color: rgb(187, 187, 187);
+}
+
+section {
+    max-width: 100%;
+}
+  
+details {
+    background: lightcyan;
+    color: orange;
+    padding: 15px;
+    margin-bottom: 2px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+p{
+    color: black;
+}
+
+
+summary {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2em;
+}
