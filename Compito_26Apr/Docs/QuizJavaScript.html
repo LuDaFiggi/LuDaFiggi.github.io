@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz di Informatica</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\Compito_26Apr\JavaScript\quiz.js"></script>
+    </head>
+    <body>
+        <center><a href="https://ludafiggi.github.io/"><img src="https://ludafiggi.github.io/Images/Index.png"></center></a>
+        <form>
+            <fieldset>
+                <legend>
+                    Dati Personali
+                </legend>
+                <p>
+                    Nome <input id="nome" type="text" placeholder="Nome" required>
+                    Cognome <input id="cognome" type="text" placeholder="Cognome" required>
+                    <br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Data di nascita
+                </legend>
+                <p>
+                    Giorno <input id="giorno" type="number" placeholder="Giorno" min="1" max="31" required>
+                    Mese<select id="mese" required>
+                        <option>Gennaio</option>
+                        <option>Febbraio</option>
+                        <option>Marzo</option>
+                        <option>Aprile</option>
+                        <option>Maggio</option>
+                        <option>Giugno</option>
+                        <option>Luglio</option>
+                        <option>Agosto</option>
+                        <option>Settembre</option>
+                        <option>Ottobre</option>
+                        <option>Novembre</option>
+                        <option>Dicembre</option>
+                    </select>
+                    Anno <input id="anno" type="number" placeholder="Anno" min="1900" max="2021" required>
+                    <br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Domande
+                </legend>
+                <p>
+                    Qual è il linguaggio di programmazione usato per modificare i database? (in maiuscolo)
+                    <br>
+                    <input id="Risposta1" type="text" placeholder="Risposta">
+                </p>
+                <p>
+                    Quanti valori può assumere una variabile booleana?
+                    <br>
+                    <select id="Risposta2">
+                        <option id="Risposta2_1" nome="Risposta2_1">1</option>
+                        <option id="Risposta2_2" nome="Risposta2_2">2</option>
+                        <option id="Risposta2_3" nome="Risposta2_3">4</option>
+                        <option id="Risposta2_4" nome="Risposta2_4">256</option>
+                    </select>
+                </p>
+                <p>
+                    Quali sono le librerie caricate a run-time?
+                    <br>
+                    <input type="radio" name="rad" id="Risposta3_1">Statiche
+                    <br>
+                    <input type="radio" name="rad" id="Risposta3_1">Dinamiche
+                </p>
+                <p>
+                    Quali tra queste sono parole chiave in C++?
+                    <br>
+                    <input type="checkbox" name="check" id="Risposta4_1">void
+                    <br>
+                    <input type="checkbox" name="check" id="Risposta4_2">integer
+                    <br>
+                    <input type="checkbox" name="check" id="Risposta4_3">char
+                </p>
+                <p>
+                    8 bit corrispondono a un...
+                    <br>
+                    <input id="Risposta5" type="text" placeholder="Risposta">
+                </p>
+            </fieldset>
+            
+            <p>
+                <input type="button" value="Elabora" onclick="elaboraRisposte(this.form)">
+                <input type="reset" value="Cancella">
+            </p>
+            <p>Utente con punteggio <label nome="Utente_con_punteggio" id="utente_con_punteggio"></label></p>
+            <fieldset>
+                <legend>
+                    Esito
+                </legend>
+                Punteggio: <label nome="Punteggio" id="punteggio"></label>
+            </fieldset>
+        </form>
+    </body>
+</html>
