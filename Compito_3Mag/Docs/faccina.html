@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Faccina</title>
+    <meta charset="utf-8">
+    <script>
+        function creaFigura() {
+            var mioCanvas = document.getElementById("mycanvas");
+            var ctx = mioCanvas.getContext("2d");
+
+            //cerchio giallo
+            ctx.beginPath();
+            ctx.arc(200, 200, 150, 0, 2 * Math.PI, true);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "rgba(0,0,0,0.5)";
+            ctx.stroke();
+            ctx.fillStyle = "rgba(255,255,0,1)";
+            ctx.fill();
+
+            //occhi 
+            ctx.beginPath();
+            ctx.arc(150, 150, 20, 0, 2 * Math.PI, true);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "rgba(0,0,0,0.5)";
+            ctx.stroke();
+            ctx.fillStyle = "rgba(0,0,0,1)";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(150, 150, 5, 0, 2 * Math.PI, true);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "rgba(255,255,255,0.5)";
+            ctx.stroke();
+            ctx.fillStyle = "rgba(255,255,255,1)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(250, 150, 20, 0, 2 * Math.PI, true);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "rgba(0,0,0,0.5)";
+            ctx.stroke();
+            ctx.fillStyle = "rgba(0,0,0,1)";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(250, 150, 5, 0, 2 * Math.PI, true);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "rgba(255,255,255,0.5)";
+            ctx.stroke();
+            ctx.fillStyle = "rgba(255,255,255,1)";
+            ctx.fill();
+
+            //bocca
+            ctx.beginPath();
+            ctx.arc(200, 225, 75, 0, Math.PI, false);
+            ctx.lineWidth=3;
+            ctx.strokeStyle="rgba(0,0,255,1)";
+            ctx.stroke();
+            ctx.fillStyle="rgba(255,0,0,1)";
+            ctx.fill();
+        }
+    </script>
+</head>
+
+<body style="position: relative;">
+    <form>
+        <h1>Faccina</h1>
+        <input type="button" id="button" value="Disegna" onclick="creaFigura()">
+        <p>
+            <canvas id="mycanvas" width="400" height="400" style="border: 1px solid  #d3d3d3; position: absolute;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+        </p>
+    </form>
+</body>
+
+</html>
