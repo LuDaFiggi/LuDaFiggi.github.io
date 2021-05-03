@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crea PDF</title>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="pdf.js"></script>
+    <link rel="stylesheet" type="text/css" href="stile.css">
+</head>
+
+<body>
+    <table>
+        <h1>Creare un PDF con JavaScript</h1>
+        <tr>
+            <td><label for="nome">Nome:</label></td>
+            <td><input type="text" id="nome" name="nome"></td>
+        </tr>
+        <tr>
+            <td><label for="cognome">Cognome:</label></td>
+        <td><input type="text" id="cognome" name="cognome"></td>
+        </tr>
+        <tr>
+            <td><label for="numero">Numero:</label></td>
+        <td><input type="text" id="numero" name="numero"></td>
+        </tr>
+        <tr>
+            <td><label for="email">E-Mail:</label></td>
+        <td><input type="text" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td><label for="messaggio">Messaggio:</label></td>
+            <td><textarea id="messaggio" name="messaggio"></textarea></td>
+        </tr>
+    </table>
+    <p>Clicca il bottone per scaricare il PDF con i tuoi dati
+    <input type="button" value="Clicca per creare il pdf" onclick="creaPDF()"></p>
+</body>
+
+</html>
