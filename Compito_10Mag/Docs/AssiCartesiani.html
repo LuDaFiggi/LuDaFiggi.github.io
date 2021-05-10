@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        canvas {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="lavagna" width="400" height="400" style="border:5px solid maroon"></canvas></p>
+    <script>
+        var c = document.getElementById('lavagna');
+        const Ox = c.width / 2;   //ascissa origine
+        const Oy = c.height / 2;  //ordinata origine
+        //const u = 20;         //unità di misura
+        var ctx = c.getContext("2d");
+        ctx.strokeStyle = "rgba(255,255,255,0.5)"
+        ctx.fillStyle = "rgba(255,255,255,0.5)"
+        /*ctx.moveTo(Ox+50,20);  //segmento unità di misura
+        ctx.lineTo(Ox+50 + u,20); */
+        ctx.moveTo(20, Oy);  // punto di partenza
+        ctx.lineTo(c.width - 20, Oy);  //asse x
+        ctx.moveTo(c.width - 20, Oy - 4);  //punta asse x
+        ctx.lineTo(c.width - 20, Oy + 4);
+        ctx.lineTo(c.width - 12, Oy);
+        ctx.lineTo(c.width - 20, Oy - 4); //fine punta asse x
+        ctx.moveTo(Ox, 20);  //coordinate punto di partenza
+        ctx.lineTo(Ox, c.height - 20);  //asse y
+        ctx.moveTo(Ox - 4, 20);  //punta asse y
+        ctx.lineTo(Ox + 4, 20);
+
+
+
+        ctx.lineTo(Ox, 12);
+        ctx.lineTo(Ox - 4, 20); //fine punta asse y
+        ctx.stroke();  //disegna
+        ctx.fill() //riempimento frecce
+        ctx.fillStyle = "rgb(255,255,255)"
+
+        for (var i = 15; i < Oy; i += 15) {
+            ctx.moveTo(Ox - i, Oy - 5); //segmentini asse y negativo
+            ctx.lineTo(Ox - i, Oy + 5);
+        }
+        for (var i = 15; i < Oy - 4; i += 15) {
+            ctx.moveTo(Ox + i, Oy - 5); //segmentini asse y positivo
+            ctx.lineTo(Ox + i, Oy + 5);
+        }
+
+        for (var i = 15; i < Ox; i += 15) {
+            ctx.moveTo(Ox - 5, Oy - i); //segmentini asse x negativo
+            ctx.lineTo(Ox + 5, Oy - i);
+        }
+        for (var i = 15; i < Ox - 4; i += 15) {
+            ctx.moveTo(Ox - 5, Oy + i); //segmentini asse x positivo
+            ctx.lineTo(Ox + 5, Oy + i);
+        }
+
+        ctx.stroke();  //disegna
+
+        // scrive x, y, O, u
+        ctx.fillText('x', c.width - 20, Oy + 10)
+        ctx.fillText('y', Ox + 5, 20)
+        ctx.fillText('O', Ox - 10, Oy + 10)
+        // ctx.fillText('u',Ox+50+u/2,30)
+        //TRASLAZIONE
+        ctx.translate(Ox, Oy);
+
+ //Esempio di coordinate e punto P
+        /*   ctx.fillStyle="rgb(255,0,0)"
+            ctx.fillRect(4*u,-3*u,2,2)
+           ctx.fillText('M',4*u+2,-3*u) */
+    </script>
+
+</body>
+
+</html>
