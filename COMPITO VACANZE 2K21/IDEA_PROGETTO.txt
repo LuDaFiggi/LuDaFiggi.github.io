@@ -1,0 +1,20 @@
+Ventilatore smart
+
+ventilatore che si accende in automatico quando si supera una certa temperatura impostata dall'utente e che 
+continua ad andare fino a quando non si raggiunge la temperatura desiderata o per un tot di tempo impostato dall'utente
+
+in arduino mettere sensore di temperatura, ventilatore settabile a varie velocità tramite telecomando o applicazione
+display con indicata la temperatura attuale e che a seconda dei tasti schiacciati sul telecomando interagisce, 
+ad esempio quando si setta la velocità della ventola
+
+in java o c# fare un'applicazione per computer con cui si può gestire il ventilatore
+
+
+tasto on --> 213709226 ACCENDE E SPEGNE
+tasto func/stop --> 16769565 ACCEDE AL MENU' (auto-accensione, timer, velocità)
+tasto >>| --> 16761405 SCORRE IL MENU' E LE OPZIONI
+tasto |<< --> 16720605 SCORRE IL MENU' E LE OPZIONI
+tasto >|| --> 16712445 SELEZIONA
+tasto freccia su --> 16748655 AUMENTA GRADI
+tasto freccia giu --> 16769055 DIMINUISCE GRADI
+
