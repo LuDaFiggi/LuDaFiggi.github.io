@@ -5,6 +5,7 @@
  */
 package progetto_estate2k21;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
