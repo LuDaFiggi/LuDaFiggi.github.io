@@ -1,9 +1,11 @@
+@charset "utf-8";
+
 #div { 
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: url(https://github.com/LuDaFiggi/LuDaFiggi.github.io/blob/main/COMPITO%20VACANZE%202K21/Sito%20web/Images/casa1.jpg) no-repeat center top;
+    background: url(https://ludafiggi.github.io/Images/casa1.png) no-repeat center top;
     position: fixed; 
     z-index: -1;
     -webkit-background-size: cover;
@@ -12,72 +14,340 @@
     background-size: cover;
 }
 
-#sct {
-    font-family: verdana;
-    padding: 20px 50px 50px;
-    font-size: 13px;
-    text-align: center;
-    background: transparent;
-    text-transform:uppercase;
-    
-    }
-    ul#sct-nav {
-    text-align: left;
-    display: inline;
-    margin: 0;
-    padding: 15px 4px 17px 0;
-    list-style: none;
-    }
-    ul#sct-nav li {
-    font: bold 12px/18px sans-serif;
-    display: inline-block;
-    margin-right: -4px;
-    position: relative;
-    padding: 7px 10px;
-    background: #fff;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    }
-    ul#sct-nav li:hover {
-    background: #B2E0E0;
-    color: #fff;
-    }
-    ul#sct-nav li a:hover, ul#sct-nav li ul li a {
-    color:#fff;
-    text-decoration:none;
-    }
-    
-    ul#sct-nav li ul {
-    padding: 0;
-    position: absolute;
-    top: 32px;
+#div_prodotto { 
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
-    width: 150px;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transiton: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -ms-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    -transition: opacity 0.2s;z-index:10000;
-    }
-    ul#sct-nav li ul li {
-    background: #B2E0E0;
-    display: block;
-    color: #fff;
-    }
+    background: url(https://ludafiggi.github.io/Images/sfondo_legno.png) no-repeat center top;
+    position: fixed; 
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#div_assistenza{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://ludafiggi.github.io/Images/call_center.png) no-repeat center top;
+    position: fixed; 
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#div_chi_siamo{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://ludafiggi.github.io/Images/chi_siamo.png) no-repeat center top;
+    position: fixed; 
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#div_contatti{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://ludafiggi.github.io/Images/telefono.png) no-repeat center top;
+    position: fixed; 
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.componenti{
+    width: 30%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+p{
+    color:black;
+    text-align: center;
+    width: 50%;
+    background-color: #9e38a2;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+h3{
+    background-color: white;
+    opacity: 0.7;
+    color:black;
+    text-align: center;
+    width: 50%;
+}
+
+h2{
+    background-color: #9e38a2;
+    opacity: 0.7;
+    color:black;
+    text-align: center;
+    width: 50%;
+}
+
+input:focus, button:focus {outline:0;}
+
+img {
+    vertical-align: middle;
+}
+
+a{
+	text-decoration:none;
+}
+
+ul li{ 
+	list-style:none;
+}
+
+html, body{
+	font-family: 'Roboto Slab', serif;
+	color:#666 /*color-text*/;
+	height:100%;
+	width:100%;
+}
+
+h1{
+	font-size: 1.5em;
+	text-align:left;
+	font-weight: bold;
+	color:#9e38a2/* primary color*/;
+}
+
+/* -----------------contenitore e contenuto ------------------ */
+
+.contenitore .contenuto{
+	max-width:1200px;
+	margin:auto;
+	padding: 70px 10px;
+}
+
+.contenitore .contenuto a{
+	color:#9e38a2/* primary color*/;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.contenitore .contenuto a:hover{
+	color:#9e38a2/* primary lightcolor*/;
+}
+
+/* -----------------Menu nella versione mobile-----------------*/
+
+.active{
+	color:#FFFFFF/* primary super-lightcolor*/;
+	background-color: #9e38a2/* primary lightcolor*/;
+}
+	
+.active-dropdown{
+	color:#FFFFFF /* primary super-lightcolor*/;
+	background-color:#9e38a2/* primary lightcolor*/;
+}
+
+nav{
+	height:100%;
+	background-color:#9e38a2;/* primary lightcolor* /* sfondo menu mobile*/
+	position:fixed;
+	width:100%;
+	margin-top:54px;
+	visibility:hidden;
+	overflow:auto;/* permette lo scroll quando il menu è aperto*/
+	   
+}
+
+nav ul{
+	padding-bottom:54px;
+}
+
+nav ul li a {
+	padding: 16px 0 16px 32px;
+	display:block;
+	color:#fbfafa;
+	font-size:16px;
+	transition: background-color 0.3s ease;
+}
+
+.submenu{
+	color:#f83bff /* primary super-lightcolor*/;
+	padding-left: 55px;
+	padding-bottom: 5px;
+}
+
+nav ul li ul {
+	padding-left:0; 
+	padding-bottom:0;
+}
+
+nav ul li ul li a {
+	font-size:16px;
+	padding:10px 0 10px 55px;
+	border:hidden; 
+}
+
+.lingua{
+	border-top: 1px solid #9e38a2/* primary lightcolor*/; 
+}
+
+.lingua > a::before{
+	content: url(img/earth-globe.svg);
+	margin-right: 5px;
+}
+
+/* ----------------- div bar per l'attivazione del menu ------------------ */
+
+#bar{
+	background-color: #9e38a2 /* primary color*/; 
+	height:54px;
+	width:100%;
+	z-index:2;
+	position:fixed;
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);
+}
+
+#bar #logo{
+	float:right;
     
-    ul#sct-nav li ul li:hover {
-    background: #A0CACA;
-    }
-    
-    ul#sct-nav li:hover ul {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    }
+	margin-right:12px;
+}
+
+/* -----------------media per menu orizzontale ------------------ */
+
+@media screen and (min-width: 980px){
+	
+#bar #logo{
+	float:left;
+	margin-left:12px;
+}
+
+nav{
+	z-index:3;
+	margin-top:19px;
+	height:auto;
+	background-color:transparent;
+	transition:none;
+	width:auto;
+	float:right;
+	right:12px;
+	visibility:visible;
+	font-family:'Roboto Slab', serif;
+	overflow:inherit;
+}
+
+.active{
+	background-color:transparent;
+	color:#f83bff /* primary super-lightcolor*/;
+}
+	
+.active-dropdown{
+	color:#fff;
+	background-color:#f83bff/* primary lightcolor*/;
+}
+
+nav ul{
+	padding:0;
+}
+	
+nav ul li a {
+	padding:0;
+	display:inline;
+	font-size:16px;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	background-color:transparent;
+	color:#f83bff /* primary super-lightcolor*/;
+}
+	
+.submenu{
+	padding-left: 0;
+	color:#FFFFFF;
+}
+
+nav ul li {	
+	margin:0;
+	float:left;
+	position:relative;
+	padding:0 16px;
+}
+
+.submenu::after{
+	content: url(img/arrow-down.svg);
+	float: right;
+	padding-left: 6px;
+}
+	
+/* ----------------- dropdown - attivare il menu a tendina ------------------ */
+	
+nav ul li ul { 
+	position:fixed;
+	height:0;
+	overflow:hidden;
+	background-color: #9e38a2 /* primary color*/
+}
+	
+nav ul li:hover ul{
+	height:auto;
+	padding-top: 14px;
+	position: absolute;
+    right: 0;	
+}
+
+nav ul li ul li {
+	font-size: 14px;
+	font-weight: normal;
+	float:none;
+	padding:0;
+	min-width: 160px;
+	border-top: 1px solid #9e38a2/* primary lightcolor*/;
+}
+
+nav ul li ul li a {
+	padding: 16px 32px;
+	display: block;
+	background-color: #f83bff/* primary color*/;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+nav ul li ul li a:hover {
+	background-color:#9e38a2/* primary lightcolor*/;
+	color:#f83bff /* primary super-lightcolor*/;
+}
+
+.lingua{
+	border-top: 0;
+	border-left: solid 1px #fff;
+	float: left;
+}}
