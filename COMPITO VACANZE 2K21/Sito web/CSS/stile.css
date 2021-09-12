@@ -1,0 +1,74 @@
+body
+{
+    background-image: url("D:\LUCA\INFORMATICA\GitHub\LuDaFiggi.github.io\COMPITO VACANZE 2K21\Sito web\Images\casa1.jpg");
+}
+
+#sct {
+    font-family: verdana;
+    padding: 20px 50px 50px;
+    font-size: 13px;
+    text-align: center;
+    background: transparent;
+    text-transform:uppercase;
+    
+    }
+    ul#sct-nav {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+    }
+    ul#sct-nav li {
+    font: bold 12px/18px sans-serif;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 7px 10px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    }
+    ul#sct-nav li:hover {
+    background: #B2E0E0;
+    color: #fff;
+    }
+    ul#sct-nav li a:hover, ul#sct-nav li ul li a {
+    color:#fff;
+    text-decoration:none;
+    }
+    
+    ul#sct-nav li ul {
+    padding: 0;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 150px;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;z-index:10000;
+    }
+    ul#sct-nav li ul li {
+    background: #B2E0E0;
+    display: block;
+    color: #fff;
+    }
+    
+    ul#sct-nav li ul li:hover {
+    background: #A0CACA;
+    }
+    
+    ul#sct-nav li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    }
